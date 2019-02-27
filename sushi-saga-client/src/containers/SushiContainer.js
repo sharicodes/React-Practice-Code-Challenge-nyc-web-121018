@@ -9,12 +9,12 @@ const SushiContainer = props => {
     <Fragment>
       <div className="belt">
         {props.sushis.map(aSushi => {
-          return <Sushi key={aSushi.id} a aSushi={aSushi} />;
+          return <Sushi key={aSushi.id} aSushi={aSushi} />;
         })}
         {/*
              Render Sushi components here!
           */}
-        <MoreButton />
+        <MoreButton addSushi={props.addSushi} />
       </div>
     </Fragment>
   );
